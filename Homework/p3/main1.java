@@ -1,4 +1,7 @@
 package math;
+import org.junit.Assert;
+import org.junit.Test;
+
 
 public class Complex {
     private final double real;
@@ -86,6 +89,8 @@ public class Complex {
         }
         Complex other = (Complex) obj;
         return Double.compare(real, other.real) == 0;
+    }
+
 
 
 public class Main {
@@ -126,4 +131,5 @@ public class Main {
         System.out.println("Real part of z: " + z.r());
         System.out.println("Imaginary part of z: " + z.i());
     }
+ }
 }
